@@ -1,10 +1,10 @@
 <div align="center">
 
-# Financial Management System
+# 💰 Controle Financeiro do Casal
 
-### Case Study — Personal Finance Automation with Excel, Power Query and Python
+### Financial Management System
 
-**Controle Financeiro do Casal**
+**Case Study — Personal Finance Automation with Excel, Power Query and Python**
 
 Excel • Power Query • Python • Data Modeling • Dashboard • Data Governance
 
@@ -16,211 +16,205 @@ Sistema financeiro desenvolvido para simular um fluxo real de organização, tra
 
 ---
 
-## Objetivo do projeto
+# 🎯 Objetivo do Projeto
 
 Este projeto demonstra como um problema real de controle financeiro familiar pode ser transformado em um sistema estruturado de dados.
 
-A solução organiza contas, cartões, gastos compartilhados, faturas sintéticas, regras de rateio, auditorias e indicadores em um fluxo integrado com Excel, Power Query e Python.
+A solução integra Excel, Power Query e Python para automatizar parte do fluxo de tratamento das movimentações financeiras, desde a extração das faturas até a apresentação dos indicadores em um dashboard interativo.
 
-O foco não é apenas criar um dashboard, mas apresentar um processo completo de:
+O objetivo não é apenas construir um dashboard, mas demonstrar conceitos relacionados à:
 
-- entrada e organização de dados;
-- extração e tratamento de faturas;
-- consolidação em base estruturada;
-- aplicação de regras de negócio;
-- construção de dashboard interativo;
-- auditoria, validação e documentação técnica.
+- Gestão de Dados
+- Engenharia de Dados
+- Análise de Dados
+- Automação
+- Modelagem de Dados
+- Documentação Técnica
+- Governança de Dados
 
 ---
 
-## Teste rápido
+# 🚀 Teste Rápido
 
-### Dashboard
+## Dashboard
 
 1. Baixe este repositório.
-2. Abra o arquivo:
+2. Abra:
 
 ```text
 dashboard/controle-financeiro-casal-dashboard.xlsb
 ```
 
-3. Use os filtros de **Ano** e **Mês**.
-4. Valide se os cards, gráficos e saldo mudam conforme os filtros.
-5. Para testar a atualização, use **Dados → Atualizar Tudo** no Microsoft Excel Desktop.
-
-> O arquivo pode ser visualizado pelo Office Online, porém a experiência completa com Power Query, atualização de dados e recursos do dashboard deve ser testada no Microsoft Excel Desktop.
-
-### Extrator de faturas
-
-1. Execute o script:
+3. Utilize os filtros de **Ano** e **Mês**.
+4. Caso necessário execute:
 
 ```text
-src/extrator_faturas_casal.py
+Dados → Atualizar Tudo
 ```
 
-2. Use como entrada as faturas sintéticas disponíveis em:
+---
+
+## Extrator
+
+Execute:
+
+```text
+python src/extrator_faturas_casal.py
+```
+
+Utilize as faturas localizadas em:
 
 ```text
 examples/faturas-sinteticas/input/
 ```
 
-3. Informe uma pasta vazia como saída.
-4. O script irá gerar planilhas estruturadas de movimentações a partir das faturas processadas.
+Escolha uma pasta vazia como saída.
+
+Ao término da execução serão geradas planilhas estruturadas contendo as movimentações extraídas.
 
 ---
 
-## Saiba mais
+# 📖 Saiba Mais
 
-Este projeto simula um fluxo real de dados financeiros: faturas e movimentações são tratadas por um extrator em Python, consolidadas em uma base estruturada e consumidas por uma planilha com Power Query, tabelas dinâmicas, regras de rateio e dashboard interativo.
-
-A versão publicada utiliza dados sintéticos de 2023 a 2025, criados para representar a saída esperada do extrator de faturas, preservando a privacidade dos dados reais.
-
-O objetivo é demonstrar organização de dados, automação, modelagem de regras de negócio, construção de dashboard, governança e documentação técnica aplicada a um problema real.
-
----
-
-## Principais funcionalidades
-
-- Dashboard interativo com filtros por ano e mês.
-- Separação entre **Contas** e **Cartões**.
-- Regra de rateio para gastos compartilhados classificados como **Nosso**.
-- Total do casal calculado sem duplicar valores compartilhados.
-- Auditoria e fechamento mensal.
-- Abas automatizadas para estabelecimentos e recorrências pendentes.
-- Power Query portátil para consumo da base sintética.
-- Extrator Python para transformar faturas PDF/CSV em planilhas estruturadas.
-- Exemplos sintéticos de faturas para testar o extrator sem expor dados reais.
-- Documentação técnica para explicar arquitetura, regras e decisões do projeto.
-
----
-
-## Arquitetura resumida
+O projeto simula um fluxo real de dados financeiros.
 
 ```text
-Faturas PDF/CSV sintéticas
-        ↓
+Faturas PDF / CSV
+
+↓
+
 Extrator Python
-        ↓
-Planilhas de movimentações extraídas
-        ↓
-Base sintética consolidada
-        ↓
-Power Query + Tabelas Dinâmicas
-        ↓
-Dashboard financeiro
+
+↓
+
+Planilhas Estruturadas
+
+↓
+
+Base Consolidada
+
+↓
+
+Power Query
+
+↓
+
+Dashboard
 ```
+
+A versão publicada utiliza exclusivamente dados sintéticos, preservando totalmente a privacidade dos dados financeiros reais.
 
 ---
 
-## Estrutura do repositório
+# ✨ Principais Funcionalidades
+
+- Dashboard financeiro interativo.
+- Filtros por Ano e Mês.
+- Separação entre Contas e Cartões.
+- Rateio automático de gastos compartilhados.
+- Consolidação por responsável.
+- Auditoria e fechamento mensal.
+- Power Query portátil.
+- Extrator Python para faturas Santander (PDF) e Nubank (CSV).
+- Faturas sintéticas para testes.
+- Documentação completa do projeto.
+
+---
+
+# 📂 Estrutura do Repositório
 
 ```text
 controle-financeiro-casal/
-├── dashboard/                     # Arquivo Excel principal
-├── data/synthetic/                # Base sintética consumida pelo Dashboard
-├── examples/faturas-sinteticas/   # Faturas sintéticas para testar o extrator
-├── src/                           # Código Python do extrator
-├── docs/                          # Documentação do projeto
-└── _docs_privado/                 # Backlog interno ignorado pelo Git
+
+├── dashboard/
+├── data/
+├── docs/
+├── examples/
+├── src/
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
-> A pasta `_docs_privado/` é mantida apenas localmente e não deve ser publicada no GitHub.
+---
+
+# 📚 Explore o Projeto
+
+👋 **Novo por aqui?**
+
+➡️ [00 - Sobre o Projeto](docs/00-sobre-o-projeto.md)
 
 ---
 
-## Explore a documentação
+🚀 **Quer testar o sistema?**
 
-Começando agora?
-
-- [01 - Guia de Teste Rápido](docs/01-guia-teste-rapido.md)  
-  Veja como testar o dashboard e o extrator em poucos minutos.
-
-Quer entender como o sistema foi construído?
-
-- [02 - Arquitetura do Sistema](docs/02-arquitetura-do-sistema.md)  
-  Fluxo completo dos dados, do extrator ao dashboard.
-
-Quer conhecer a lógica da planilha?
-
-- [03 - Estrutura da Planilha](docs/03-estrutura-da-planilha.md)  
-  Descrição das abas, responsabilidades e camadas técnicas.
-
-Quer entender as regras de negócio?
-
-- [04 - Regras de Negócio](docs/04-regras-de-negocio.md)  
-  Rateio, contas, cartões, consolidado, saldo e indicadores.
-
-Quer conhecer o extrator?
-
-- [05 - Extrator de Faturas](docs/05-extrator-de-faturas.md)  
-  Como PDFs e CSVs são transformados em dados estruturados.
-
-Quer ver a evolução do projeto?
-
-- [06 - Relatório de Desenvolvimento](docs/06-relatorio-de-desenvolvimento.md)  
-  Decisões técnicas, melhorias, validações, UX e stress test.
+➡️ [01 - Guia de Teste Rápido](docs/01-guia-de-teste-rapido.md)
 
 ---
 
-## Tecnologias utilizadas
+🏗 **Quer entender a arquitetura?**
+
+➡️ [02 - Arquitetura do Sistema](docs/02-arquitetura-do-sistema.md)
+
+---
+
+📊 **Quer conhecer a estrutura da planilha?**
+
+➡️ [03 - Estrutura da Planilha](docs/03-estrutura-da-planilha.md)
+
+---
+
+⚙️ **Quer entender as regras de negócio?**
+
+➡️ [04 - Regras de Negócio](docs/04-regras-de-negocio.md)
+
+---
+
+🐍 **Quer conhecer o extrator?**
+
+➡️ [05 - Extrator de Faturas](docs/05-extrator-de-faturas.md)
+
+---
+
+📝 **Quer acompanhar toda a evolução do projeto?**
+
+➡️ [06 - Relatório de Desenvolvimento](docs/06-relatorio-de-desenvolvimento.md)
+
+---
+
+# 🛠 Tecnologias Utilizadas
 
 - Microsoft Excel
 - Power Query
-- Tabelas Dinâmicas
-- Segmentadores
 - Python
 - Pandas
 - pdfplumber
-- Dados sintéticos
+- Tabelas Dinâmicas
+- Segmentadores
+- Git
+- GitHub
 
 ---
 
-## Regras de negócio principais
+# 🔒 Sobre os Dados
 
-O sistema trabalha com três tipos de responsáveis:
+Este repositório **não contém informações financeiras reais**.
 
-```text
-Fred
-Laura
-Nosso
-```
-
-A regra central é:
-
-- gastos próprios de Fred entram em Fred;
-- gastos próprios de Laura entram em Laura;
-- gastos compartilhados entram como Nosso;
-- os valores classificados como Nosso são rateados 50% para Fred e 50% para Laura;
-- o Total Casal é calculado por Fred + Laura, evitando duplicar o valor compartilhado.
-
-Assim, os cards **Contas Nosso** e **Cartões Nosso** funcionam como referência do volume compartilhado, mas não devem ser somados novamente ao Total Casal.
+Todas as movimentações, faturas e bases disponibilizadas foram criadas exclusivamente para demonstração técnica do funcionamento do sistema.
 
 ---
 
-## Sobre os dados
+# 👨‍💻 Competências Demonstradas
 
-Este repositório não contém dados financeiros reais.
-
-As movimentações, faturas, bases e exemplos incluídos foram criados exclusivamente para demonstração técnica do funcionamento do sistema.
-
-O objetivo é permitir que qualquer pessoa teste o dashboard e o extrator sem expor informações pessoais, bancárias ou financeiras reais.
-
----
-
-## Lições demonstradas pelo projeto
-
-Este case demonstra, na prática, competências importantes para áreas de dados:
-
-- organização de bases e arquivos;
-- automação de tratamento de dados;
-- modelagem de regras de negócio;
-- criação de pipelines locais com Python e Excel;
-- uso de Power Query para consolidação;
-- construção de dashboards interativos;
-- documentação técnica;
-- validação por stress test;
-- preocupação com privacidade e dados sintéticos;
-- visão de governança e manutenção futura.
+- Modelagem de Dados
+- Power Query
+- Automação com Python
+- Limpeza e Padronização de Dados
+- Construção de Dashboards
+- Documentação Técnica
+- Organização de Projetos
+- Git e GitHub
+- Governança de Dados
 
 ---
 
@@ -228,6 +222,6 @@ Este case demonstra, na prática, competências importantes para áreas de dados
 
 ### Desenvolvido como projeto de portfólio
 
-Gestão de Dados • Engenharia de Dados • Análise de Dados
+**Gestão de Dados • Engenharia de Dados • Análise de Dados**
 
 </div>
