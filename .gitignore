@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Arquivos locais/privados
+_docs_privado/
+*.log
+.env
+
+# Saídas geradas localmente pelo extrator
+examples/faturas-sinteticas/output/*.xlsx
+!examples/faturas-sinteticas/output/.gitkeep
+
+# Dados reais nunca devem ser versionados
+Documentos/
+Faturas em PDF/
+Faturas em CSV/
+Comprovantes/
+Notas Fiscais/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
