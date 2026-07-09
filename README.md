@@ -1,4 +1,19 @@
+<div align="center">
+
 # Controle Financeiro do Casal
+
+### Financial Management System  
+Excel • Power Query • Python • Data Modeling • Dashboard
+
+Sistema financeiro desenvolvido para simular um fluxo real de organização, extração, tratamento e análise de dados financeiros, com base sintética e documentação voltada para portfólio em dados.
+
+![Dashboard Preview](docs/imagens/dashboard-preview.png)
+
+</div>
+
+---
+
+## Visão geral
 
 Sistema financeiro desenvolvido em Excel para controle de contas, cartões, gastos compartilhados e análise mensal de um casal.
 
