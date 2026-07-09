@@ -4,179 +4,215 @@
 
 O **Controle Financeiro do Casal** foi desenvolvido como um estudo de caso para demonstrar a aplicação de conceitos de Gestão de Dados, Engenharia de Dados e Análise de Dados na resolução de um problema real.
 
-Embora tenha sido concebido para organizar as finanças de um casal, o projeto evoluiu para um sistema estruturado de tratamento de dados, composto por automação, modelagem, documentação técnica e visualização analítica.
+Embora tenha surgido da necessidade de organizar as finanças de um casal, o projeto evoluiu para um sistema estruturado de tratamento de dados, combinando automação, modelagem de informações, documentação técnica e visualização analítica.
 
 ---
 
-# O problema
+# Contexto
 
-O controle financeiro era realizado de forma predominantemente manual, exigindo:
+O processo de controle financeiro era realizado de forma predominantemente manual, envolvendo lançamentos recorrentes, importação de faturas, classificação de despesas e consolidação de informações provenientes de diferentes instituições financeiras.
 
-- importação manual de faturas;
-- classificação repetitiva de estabelecimentos;
-- consolidação de diferentes instituições financeiras;
-- atualização manual de análises.
-
-Esse processo consumia tempo, aumentava a probabilidade de erros e dificultava auditorias e análises históricas.
+Com o aumento da quantidade de dados, tornou-se necessário estruturar uma solução que reduzisse tarefas repetitivas, aumentasse a confiabilidade das informações e facilitasse análises mensais.
 
 ---
 
-# Objetivos do Projeto
+# Objetivos
 
-Os principais objetivos definidos durante o desenvolvimento foram:
+Durante o desenvolvimento foram definidos os seguintes objetivos:
 
-- reduzir tarefas manuais;
+- reduzir atividades manuais;
 - padronizar a organização dos dados;
-- automatizar a importação de movimentações;
-- consolidar informações de diferentes fontes;
+- automatizar a importação de movimentações financeiras;
+- consolidar dados provenientes de diferentes fontes;
 - disponibilizar indicadores claros para tomada de decisão;
-- construir uma solução fácil de manter e evoluir.
+- construir uma solução simples para utilização diária e fácil de manter.
 
 ---
 
-# Evolução da Solução
+# Evolução do Projeto
 
-O projeto evoluiu em etapas.
+O desenvolvimento foi realizado de forma incremental.
 
-## Fase 1 — Organização
+## Fase 1 — Estruturação
 
-Estruturação da pasta do projeto, definição da arquitetura de arquivos e criação da planilha principal.
+- Organização das pastas do projeto.
+- Definição da arquitetura inicial.
+- Construção da planilha principal.
 
 ---
 
 ## Fase 2 — Modelagem
 
-Definição das tabelas, categorias, responsáveis, cartões e regras de negócio.
+- Estruturação das tabelas.
+- Definição das categorias.
+- Cadastro de cartões.
+- Definição dos responsáveis.
+- Criação das primeiras regras de negócio.
 
 ---
 
 ## Fase 3 — Automação
 
-Desenvolvimento do extrator de faturas em Python para processar documentos Santander (PDF) e Nubank (CSV).
+Desenvolvimento do extrator de faturas em Python para processamento de:
+
+- Santander (PDF)
+- Nubank (CSV)
+
+O objetivo foi transformar documentos financeiros em planilhas estruturadas.
 
 ---
 
-## Fase 4 — Consolidação
+## Fase 4 — Integração dos Dados
 
-Integração da base através do Power Query e construção das tabelas dinâmicas.
+Implementação do Power Query para:
+
+- importar automaticamente as bases;
+- transformar os dados;
+- consolidar as movimentações;
+- alimentar o Dashboard.
 
 ---
 
 ## Fase 5 — Dashboard
 
-Desenvolvimento do painel interativo com indicadores, gráficos e filtros por Ano e Mês.
+Construção do painel principal contendo:
+
+- indicadores financeiros;
+- gráficos;
+- segmentadores;
+- comparações entre contas e cartões;
+- análises temporais.
 
 ---
 
-## Fase 6 — Auditoria e Experiência do Usuário
+## Fase 6 — Experiência do Usuário
 
-Reorganização das abas, definição de cores por responsabilidade, proteção de áreas críticas, simplificação da navegação e criação da área de Auditoria e Fechamento.
+Foram realizados diversos ajustes visando facilitar o uso diário do sistema.
+
+Entre eles:
+
+- reorganização das abas;
+- padronização visual;
+- definição de cores por responsabilidade;
+- proteção de áreas críticas;
+- criação da área de Auditoria e Fechamento;
+- ocultação das abas técnicas.
 
 ---
 
-## Fase 7 — Documentação e Portfólio
+## Fase 7 — Publicação
 
-Substituição dos dados reais por dados sintéticos, criação das faturas de exemplo, documentação técnica e preparação do repositório para publicação no GitHub.
+Antes da disponibilização do projeto foram realizados:
+
+- substituição dos dados reais por dados sintéticos;
+- criação de faturas sintéticas para testes;
+- documentação técnica;
+- organização do repositório no GitHub.
 
 ---
 
-# Principais Decisões Técnicas
+# Decisões Técnicas
 
-Durante o desenvolvimento foram adotadas algumas decisões importantes.
+Algumas decisões foram fundamentais durante o desenvolvimento.
 
 ## Separação em camadas
 
-O sistema foi dividido entre:
+O sistema foi dividido em:
 
 - entrada dos dados;
 - processamento;
 - consolidação;
 - apresentação.
 
-Essa separação reduz o acoplamento e facilita futuras evoluções.
+Essa abordagem facilita manutenção, evolução e reutilização dos componentes.
 
 ---
 
-## Dados sintéticos
+## Utilização de Dados Sintéticos
 
-Todos os dados publicados foram substituídos por informações sintéticas.
+Todos os dados disponibilizados publicamente foram substituídos por informações sintéticas.
 
-Essa decisão permite compartilhar o projeto sem expor informações pessoais ou financeiras.
+Essa decisão preserva a privacidade das informações financeiras sem comprometer a capacidade de demonstrar o funcionamento do sistema.
 
 ---
 
-## Power Query portátil
+## Organização da Planilha
 
-A estrutura foi ajustada para permitir a atualização da base em diferentes computadores sem necessidade de reconfiguração completa.
+As abas foram organizadas conforme sua finalidade:
+
+- operação;
+- apoio;
+- processamento;
+- apresentação.
+
+Também foi definida uma convenção de cores para facilitar a identificação das áreas editáveis e técnicas.
 
 ---
 
 ## Padronização
 
-Foram criadas tabelas auxiliares para padronizar:
+Foram criadas estruturas auxiliares para padronizar:
 
 - estabelecimentos;
 - categorias;
-- responsáveis;
-- cartões.
+- cartões;
+- responsáveis.
 
-Isso melhora a qualidade das análises e reduz inconsistências.
+Essa padronização reduz inconsistências e melhora a qualidade das análises.
 
 ---
 
-# Validações Realizadas
+# Validação da Solução
 
 Antes da publicação foram realizados testes para validar:
 
-- atualização automática do Power Query;
-- funcionamento do Dashboard;
-- filtros por Ano e Mês;
+- atualização do Power Query;
+- funcionamento dos filtros;
+- atualização automática dos indicadores;
 - consolidação entre Contas e Cartões;
-- regra de rateio para gastos compartilhados;
-- cálculo do Total do Casal;
+- regra de rateio dos gastos compartilhados;
+- funcionamento do Dashboard;
 - funcionamento do extrator de faturas;
 - proteção das áreas críticas da planilha.
 
-Todos os testes foram concluídos com sucesso utilizando a base sintética publicada.
+Todos os testes foram executados utilizando a base sintética publicada neste repositório.
 
 ---
 
 # Competências Demonstradas
 
-Este projeto permitiu aplicar conhecimentos relacionados a:
+Durante o desenvolvimento foram aplicados conhecimentos relacionados a:
 
 - Excel Avançado;
 - Power Query;
+- Python;
+- Pandas;
 - Modelagem de Dados;
 - Limpeza e Padronização de Dados;
-- Automação com Python;
 - Documentação Técnica;
-- Governança de Dados;
-- Construção de Dashboards;
 - Organização de Projetos;
-- Controle de Versão com Git e GitHub.
+- Git e GitHub;
+- Construção de Dashboards.
 
 ---
 
-# Limitações Conhecidas
+# Limitações da Versão Atual
 
-A versão atual foi desenvolvida como prova de conceito.
+A versão publicada possui algumas limitações conhecidas:
 
-Entre as principais limitações estão:
+- suporte às faturas Santander (PDF) e Nubank (CSV);
+- execução local do extrator;
+- utilização de dados sintéticos.
 
-- suporte apenas para Santander (PDF) e Nubank (CSV);
-- utilização de base sintética para demonstração;
-- execução local do extrator.
-
-Essas limitações foram mantidas intencionalmente para preservar simplicidade, reprodutibilidade e foco didático.
+Essas decisões foram adotadas para manter o projeto simples, reproduzível e adequado à finalidade de demonstração técnica.
 
 ---
 
-# Próximos Passos
+# Evoluções Futuras
 
-A arquitetura foi planejada para permitir futuras evoluções, como:
+A arquitetura foi planejada para permitir futuras evoluções, entre elas:
 
-- suporte a novas instituições financeiras;
+- inclusão de novas instituições financeiras;
 - parametrização dos responsáveis (substituindo "Fred", "Laura" e "Nosso" por nomes configuráveis);
 - ampliação das automações;
 - novos indicadores analíticos;
@@ -186,6 +222,6 @@ A arquitetura foi planejada para permitir futuras evoluções, como:
 
 # Conclusão
 
-Mais do que um dashboard financeiro, este projeto representa um estudo de caso sobre organização, tratamento e análise de dados aplicados a um problema cotidiano.
+Este projeto demonstra como um problema cotidiano pode ser transformado em uma solução estruturada utilizando conceitos de organização, tratamento e análise de dados.
 
-O desenvolvimento priorizou boas práticas de documentação, separação de responsabilidades, automação e qualidade dos dados, buscando construir uma solução de fácil manutenção e evolução.
+Além do Dashboard, o foco foi desenvolver um fluxo completo de processamento, documentar as decisões tomadas e construir uma solução de fácil manutenção, capaz de evoluir conforme novas necessidades surgirem.
